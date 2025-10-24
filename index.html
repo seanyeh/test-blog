@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commit Blog</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    .subtitle {
+      color: #7f8c8d;
+      margin-bottom: 40px;
+      font-size: 1.1rem;
+    }
+
+    .post {
+      margin-bottom: 50px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #ecf0f1;
+    }
+
+    .post:last-child {
+      border-bottom: none;
+    }
+
+    .post h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #34495e;
+    }
+
+    .meta {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+      color: #7f8c8d;
+      flex-wrap: wrap;
+    }
+
+    .meta span {
+      display: flex;
+      align-items: center;
+    }
+
+    .author::before {
+      content: '👤 ';
+      margin-right: 5px;
+    }
+
+    .date::before {
+      content: '📅 ';
+      margin-right: 5px;
+    }
+
+    .commit {
+      font-family: 'Courier New', monospace;
+      background: #ecf0f1;
+      padding: 2px 8px;
+      border-radius: 3px;
+    }
+
+    .content {
+      font-size: 1.05rem;
+      color: #555;
+    }
+
+    .content p {
+      margin-bottom: 15px;
+    }
+
+    .content p:empty {
+      display: none;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .image-item {
+      position: relative;
+      aspect-ratio: 1;
+      overflow: hidden;
+      background: #f8f9fa;
+      border-radius: 4px;
+    }
+
+    .image-item a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+
+    .image-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .image-item:hover img {
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 2px solid #ecf0f1;
+      text-align: center;
+      color: #95a5a6;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
+
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .post h2 {
+        font-size: 1.5rem;
+      }
+
+      .image-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Commit Blog</h1>
+      <p class="subtitle">A blog generated from git commits</p>
+    </header>
+
+    <main>
+      
+    <article class="post">
+      <header>
+        <h2>The Classic Burger: An American Icon</h2>
+        <div class="meta">
+          <span class="author">Sean Yeh</span>
+          <span class="date">10/22/2025, 18:28:37</span>
+          <span class="commit">#716f8e7</span>
+        </div>
+      </header>
+      <div class="content">
+        <p>Few dishes are as universally loved as the classic burger. This quintessential American comfort food has evolved from simple beginnings into countless creative variations, yet the fundamentals remain timeless: a juicy beef patty, melted cheese, crisp lettuce, and fresh tomatoes nestled in a soft bun. Whether enjoyed at a backyard barbecue or a gourmet restaurant, burgers have a special place in our hearts and stomachs. The beauty lies in its versatility—each bite can be customized to personal taste, making it a truly democratic dish that brings people together.</p><p>🤖 Generated with [Claude Code](https://claude.com/claude-code)</p><p>Co-Authored-By: Claude &lt;noreply@anthropic.com&gt;</p>
+      </div>
+      
+      <div class="image-grid">
+        
+        <div class="image-item">
+          <a href="burger.jpg" target="_blank">
+            <img src="burger.jpg" alt="Image from commit" loading="lazy" />
+          </a>
+        </div>
+        
+        <div class="image-item">
+          <a href="ice-cream.jpg" target="_blank">
+            <img src="ice-cream.jpg" alt="Image from commit" loading="lazy" />
+          </a>
+        </div>
+        
+        <div class="image-item">
+          <a href="tacos.jpg" target="_blank">
+            <img src="tacos.jpg" alt="Image from commit" loading="lazy" />
+          </a>
+        </div>
+        
+      </div>
+      
+    </article>
+  
+
+    <article class="post">
+      <header>
+        <h2>Exploring the Elegance of Sushi</h2>
+        <div class="meta">
+          <span class="author">Sean Yeh</span>
+          <span class="date">10/22/2025, 18:27:51</span>
+          <span class="commit">#8215d01</span>
+        </div>
+      </header>
+      <div class="content">
+        <p>Sushi is not just a meal—it&#039;s an experience that embodies centuries of Japanese culinary tradition. Each piece is carefully crafted by skilled chefs who have spent years perfecting their technique. From the delicate balance of vinegared rice to the pristine quality of fresh fish, sushi represents the pinnacle of minimalist cuisine. The presentation alone is a work of art, with vibrant colors and precise arrangements that delight the eyes before the first bite. Discover why sushi has become one of the most celebrated cuisines worldwide.</p><p>🤖 Generated with [Claude Code](https://claude.com/claude-code)</p><p>Co-Authored-By: Claude &lt;noreply@anthropic.com&gt;</p>
+      </div>
+      
+      <div class="image-grid">
+        
+        <div class="image-item">
+          <a href="sushi.jpg" target="_blank">
+            <img src="sushi.jpg" alt="Image from commit" loading="lazy" />
+          </a>
+        </div>
+        
+      </div>
+      
+    </article>
+  
+
+    <article class="post">
+      <header>
+        <h2>The Art of Pizza: A Culinary Journey</h2>
+        <div class="meta">
+          <span class="author">Sean Yeh</span>
+          <span class="date">10/22/2025, 18:26:34</span>
+          <span class="commit">#39d68d1</span>
+        </div>
+      </header>
+      <div class="content">
+        <p>Pizza has captivated food lovers around the world for generations. From its humble origins in Naples to becoming a global phenomenon, this beloved dish represents more than just food—it&#039;s a cultural icon. The perfect pizza combines a crispy yet chewy crust, tangy tomato sauce, and melted cheese in harmonious balance. Whether you prefer the simplicity of a classic Margherita or adventurous toppings, pizza continues to bring people together around the dinner table.</p><p>🤖 Generated with [Claude Code](https://claude.com/claude-code)</p><p>Co-Authored-By: Claude &lt;noreply@anthropic.com&gt;</p>
+      </div>
+      
+      <div class="image-grid">
+        
+        <div class="image-item">
+          <a href="pizza.jpg" target="_blank">
+            <img src="pizza.jpg" alt="Image from commit" loading="lazy" />
+          </a>
+        </div>
+        
+      </div>
+      
+    </article>
+  
+
+    <article class="post">
+      <header>
+        <h2>Understanding REST API Design</h2>
+        <div class="meta">
+          <span class="author">Sean Yeh</span>
+          <span class="date">10/22/2025, 17:25:12</span>
+          <span class="commit">#2850b25</span>
+        </div>
+      </header>
+      <div class="content">
+        <p>RESTful APIs are the backbone of web services. This guide covers the key principles: resource-based URLs, HTTP methods, status codes, and stateless communication.</p>
+      </div>
+      
+    </article>
+  
+
+    <article class="post">
+      <header>
+        <h2>5 Tips for Writing Clean Code</h2>
+        <div class="meta">
+          <span class="author">Sean Yeh</span>
+          <span class="date">10/22/2025, 17:25:06</span>
+          <span class="commit">#0a19378</span>
+        </div>
+      </header>
+      <div class="content">
+        <p>Clean code is essential for maintainability. Here are five practical tips: use meaningful names, keep functions small, write tests, avoid duplication, and comment wisely.</p>
+      </div>
+      
+    </article>
+  
+
+    <article class="post">
+      <header>
+        <h2>Getting Started with Docker Containers</h2>
+        <div class="meta">
+          <span class="author">Sean Yeh</span>
+          <span class="date">10/22/2025, 17:25:03</span>
+          <span class="commit">#e1cd5f0</span>
+        </div>
+      </header>
+      <div class="content">
+        <p>Docker has revolutionized how we deploy applications. In this post, we explore the basics of containerization and why it matters for modern development workflows.</p>
+      </div>
+      
+    </article>
+  
+    </main>
+
+    <footer>
+      <p>Generated from 6 commits</p>
+    </footer>
+  </div>
+</body>
+</html>
